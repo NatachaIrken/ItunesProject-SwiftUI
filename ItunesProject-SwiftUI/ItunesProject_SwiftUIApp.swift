@@ -11,7 +11,8 @@ import SwiftUI
 struct ItunesProject_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			let viewModel = ItunesMusicViewModel(getListUseCase: GetListSongsUseCase(repository: ItunesRepository(dataSource: ItunesApiService.shared)))
+			ContentView(viewModel: viewModel)
         }
     }
 }
