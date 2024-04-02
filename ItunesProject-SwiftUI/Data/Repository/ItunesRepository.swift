@@ -19,10 +19,8 @@ public struct ItunesRepository: ItunesRepositoryProtocol {
 		
 		switch await dataSource.fetchListSongs() {
 		case let .success(songDTO):
-			print("Repo", songDTO)
 			return .success(songDTO.map {$0.toDomainModel()})
 		case let .failure(error):
-			print("Repo error", error)
 			return .failure(error)
 		}
 	}
