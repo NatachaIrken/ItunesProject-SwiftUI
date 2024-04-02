@@ -20,6 +20,10 @@
 		6FEA59472BBBD24E003A49A5 /* SongDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59462BBBD24E003A49A5 /* SongDTO.swift */; };
 		6FEA59492BBBD291003A49A5 /* ItunesApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59482BBBD291003A49A5 /* ItunesApiService.swift */; };
 		6FEA594B2BBBD2B5003A49A5 /* ItunesApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA594A2BBBD2B5003A49A5 /* ItunesApiServiceProtocol.swift */; };
+		6FEA59512BBBD452003A49A5 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59502BBBD452003A49A5 /* SongModel.swift */; };
+		6FEA59532BBBD4AB003A49A5 /* IdentifiableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59522BBBD4AB003A49A5 /* IdentifiableString.swift */; };
+		6FEA59552BBBD4EC003A49A5 /* GetListSongsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59542BBBD4EC003A49A5 /* GetListSongsUseCase.swift */; };
+		6FEA59572BBBD51B003A49A5 /* ItunesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEA59562BBBD51B003A49A5 /* ItunesRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		6FEA59462BBBD24E003A49A5 /* SongDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDTO.swift; sourceTree = "<group>"; };
 		6FEA59482BBBD291003A49A5 /* ItunesApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesApiService.swift; sourceTree = "<group>"; };
 		6FEA594A2BBBD2B5003A49A5 /* ItunesApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesApiServiceProtocol.swift; sourceTree = "<group>"; };
+		6FEA59502BBBD452003A49A5 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		6FEA59522BBBD4AB003A49A5 /* IdentifiableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableString.swift; sourceTree = "<group>"; };
+		6FEA59542BBBD4EC003A49A5 /* GetListSongsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListSongsUseCase.swift; sourceTree = "<group>"; };
+		6FEA59562BBBD51B003A49A5 /* ItunesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		6FEA590F2BBBD10D003A49A5 /* ItunesProject-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6FEA594C2BBBD416003A49A5 /* Domain */,
 				6FEA593A2BBBD131003A49A5 /* Data */,
 				6FEA59102BBBD10D003A49A5 /* ItunesProject_SwiftUIApp.swift */,
 				6FEA59122BBBD10D003A49A5 /* ContentView.swift */,
@@ -191,6 +200,41 @@
 				6FEA594A2BBBD2B5003A49A5 /* ItunesApiServiceProtocol.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		6FEA594C2BBBD416003A49A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6FEA594F2BBBD433003A49A5 /* Protocols */,
+				6FEA594E2BBBD42C003A49A5 /* UsesCases */,
+				6FEA594D2BBBD425003A49A5 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6FEA594D2BBBD425003A49A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FEA59502BBBD452003A49A5 /* SongModel.swift */,
+				6FEA59522BBBD4AB003A49A5 /* IdentifiableString.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FEA594E2BBBD42C003A49A5 /* UsesCases */ = {
+			isa = PBXGroup;
+			children = (
+				6FEA59542BBBD4EC003A49A5 /* GetListSongsUseCase.swift */,
+			);
+			path = UsesCases;
+			sourceTree = "<group>";
+		};
+		6FEA594F2BBBD433003A49A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6FEA59562BBBD51B003A49A5 /* ItunesRepositoryProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +370,13 @@
 				6FEA59132BBBD10D003A49A5 /* ContentView.swift in Sources */,
 				6FEA59492BBBD291003A49A5 /* ItunesApiService.swift in Sources */,
 				6FEA59412BBBD1B0003A49A5 /* BaseUrl.swift in Sources */,
+				6FEA59572BBBD51B003A49A5 /* ItunesRepositoryProtocol.swift in Sources */,
 				6FEA59112BBBD10D003A49A5 /* ItunesProject_SwiftUIApp.swift in Sources */,
 				6FEA59452BBBD22A003A49A5 /* ItunesRepository.swift in Sources */,
 				6FEA59472BBBD24E003A49A5 /* SongDTO.swift in Sources */,
+				6FEA59552BBBD4EC003A49A5 /* GetListSongsUseCase.swift in Sources */,
+				6FEA59532BBBD4AB003A49A5 /* IdentifiableString.swift in Sources */,
+				6FEA59512BBBD452003A49A5 /* SongModel.swift in Sources */,
 				6FEA594B2BBBD2B5003A49A5 /* ItunesApiServiceProtocol.swift in Sources */,
 				6FEA59432BBBD1D2003A49A5 /* ItunesApiError.swift in Sources */,
 			);
